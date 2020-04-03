@@ -15,7 +15,7 @@ class UsersController < ApplicationController
   def edit; end
 
   def update
-    if current_user.update(users_params)
+    if current_user.update(user_params)
       redirect_to root_path, notice: 'Seu perfil foi atualizado com sucesso'
     else
       flash.now[:alert] = current_user.errors.full_message.to_sentence
@@ -25,7 +25,7 @@ class UsersController < ApplicationController
 
   private
 
-  def users_params
+  def user_params
     params.required(:user).permit(:name)
   end
 
