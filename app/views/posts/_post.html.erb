@@ -2,7 +2,7 @@
       <header>
         <nav>
           <%= image_tag "default-avatar.jpg", class: "photo" %>
-          <h4>whoisademir</h4>
+          <h4><%= post.created_by.username %></h4>
         </nav>
 
         <div class="actions">
@@ -45,7 +45,7 @@
         </section>
 
         <section class="description">
-          <p><strong>whoisademir</strong> <%= post.description %></p>
+          <p><strong><%= post.created_by.username %></strong> <%= post.description %></p>
         </section>
 
         <section class="created-at">
