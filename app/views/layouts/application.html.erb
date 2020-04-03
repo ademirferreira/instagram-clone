@@ -3,7 +3,7 @@
   <head>
 
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-widtch, inicial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Instagram</title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
@@ -35,5 +35,7 @@
   </header>
 
     <%= yield %>
+
+    <%= render "layouts/user_actions_modal" %>
   </body>
 </html>
