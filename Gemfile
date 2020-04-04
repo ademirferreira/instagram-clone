@@ -53,3 +53,5 @@ gem 'devise-i18n', '~> 1.9'
 gem 'letter_opener', '~> 1.7'
 
 gem 'active_storage_validations', '~> 0.8.8'
+
+gem "redis", "~> 4.1"
